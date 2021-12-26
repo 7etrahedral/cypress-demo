@@ -1,0 +1,12 @@
+{
+    "testFiles": "koligrum/**/*.spec.js",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true
+    },
+    "screenshotsFolder": "cypress/screenshots",
+    "video": true
+}

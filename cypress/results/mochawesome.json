@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-26T06:46:37.960Z",
+    "end": "2021-12-26T06:46:39.896Z",
+    "duration": 1936,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b9dbb5d4-9ff6-44dd-8df8-c8cb72f88b1e",
+      "title": "",
+      "fullFile": "cypress/integration/koligrum/page-object.spec.js",
+      "file": "cypress/integration/koligrum/page-object.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e1d09f20-d6be-451c-9cde-dc5cda12d373",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visit BDD Atlass Web",
+              "fullTitle": "My First Test Visit BDD Atlass Web",
+              "timedOut": null,
+              "duration": 896,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit('http://bdd.atlasid.tech/');\nhomepage.navigate();\ncy.url().should('eq', 'http://bdd.atlasid.tech/');",
+              "err": {},
+              "uuid": "7dafb459-5f39-477b-9877-18485bd47cfa",
+              "parentUUID": "e1d09f20-d6be-451c-9cde-dc5cda12d373",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Type something in text area",
+              "fullTitle": "My First Test Type something in text area",
+              "timedOut": null,
+              "duration": 127,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"/home/wib/workspace/koligrum/cypress-demo/cypress/screenshots/koligrum/page-object.spec.js/My First Test -- Type something in text area (failed).png\"",
+              "code": "// homepage.inputText(textTest)\ncy.get('#inputQuote').type('Something to think about, if you know what to say..');\nhomepage.selectOption('Yellow'); // cy.get('#colorSelect').select('White')\nhomepage.clickSubmitButton(); // cy.get('#buttonAddQuote').click()\nhomepage.assertQuote('Going somewhere?dsds'); // cy.get('.container div:nth-of-type(2) .panel-default').should('have.text', 'Something to think about, if you know what to say..').and('have.css', 'background-color', 'rgb(255, 255, 0)')",
+              "err": {
+                "message": "TypeError: homepage.assertQuote is not a function",
+                "estack": "TypeError: homepage.assertQuote is not a function\n    at Context.eval (http://bdd.atlasid.tech/__cypress/tests?p=cypress/integration/koligrum/page-object.spec.js:136:14)",
+                "diff": null
+              },
+              "uuid": "b65bf883-5d58-4691-8ee7-021435bbdb92",
+              "parentUUID": "e1d09f20-d6be-451c-9cde-dc5cda12d373",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7dafb459-5f39-477b-9877-18485bd47cfa"
+          ],
+          "failures": [
+            "b65bf883-5d58-4691-8ee7-021435bbdb92"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1023,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
